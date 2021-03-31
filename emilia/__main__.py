@@ -29,20 +29,17 @@ from emilia.modules.connection import connect_button
 from emilia.modules.languages import set_language
 
 PM_START_TEXT = """
-Made in sri lanka 🇱🇰
 Hi {}, my name is {}! 
-I am an beautiful 🌸 group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
-You can find my list of available commands with /help.
-My master admin is [Hirusha](t.me/matheeshaofficial) 
-[follow](https://www.instagram.com/mr.matheesha_official?r=nametag) on instragram.
+හෝ... හෝ.... මන් තමයි ග්රිෆින්ඩෝ නේවාසික භූතයා 👻 ..
+ග්රිෆින්ඩෝවරුන් කියන්නේ සිංහයන්..
+සිංහ පැටවුනේ.. 
+ඔබ සමගින්ම සිටින මන් තමයි ශ්රීමත් නිකලස් .. 
+සිංහ පෝතකයින්ට ජය වේවා !!!!.
 """
 
 HELP_STRINGS = """
-Hey there! My name is hamiony.
-I'm lovely wizard 🧙‍♀ & I help admins to manage their groups! Have a look at the following for an idea of some of \
-the things I can help you with.
-img_src = "https://telegra.ph/file/6136b50be15ccdca8a396.jpg"
+හෝ... හෝ.... මන් තමයි ග්රිෆින්ඩෝ නේවාසික භූතයා 👻 ..
+මගෙන් කෙරෙන වැඩ ටික යට තියනවා [❤](https://telegra.ph/file/ba3c84393f9fb34f41ea1.jpg)
 """
 
 DONATE_STRING = "donate_text"
@@ -161,9 +158,9 @@ def start(update, context):
             buttons = InlineKeyboardMarkup(
                 [
                 [InlineKeyboardButton(text="💭 Language", callback_data="main_setlang"), InlineKeyboardButton(text="⚙️ Connect Group", callback_data="main_connect")],
-                [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/hamione_help"), InlineKeyboardButton(text="admin chat 👩‍💻", url="https://t.me/Matheesha_official_bot")],
+                [InlineKeyboardButton(text="🏭Hogwarts Group", url="https://t.me/hamione_help"), InlineKeyboardButton(text="admin chat 👩‍💻", url="https://t.me/Matheesha_official_bot")],
                 [InlineKeyboardButton(text="❓ Help", url="https://t.me/{}?start=help".format(context.bot.username)), InlineKeyboardButton(text="💖 follow me", url="https://www.instagram.com/mr.matheesha_official?r=nametag")],
-                [InlineKeyboardButton(text="🎉 Add me to your group", url="https://t.me/{}?startgroup=new".format(context.bot.username))]])
+                [InlineKeyboardButton(text="🏭Hogwarts Channel", url="https://t.me/{}?startgroup=new".format(context.bot.username))]])
             update.effective_message.reply_photo(DAISY_IMG,
                 tl(update.effective_message, PM_START_TEXT).format(escape_markdown(first_name), escape_markdown(context.bot.first_name), OWNER_ID),
                 disable_web_page_preview=True,
