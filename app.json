@@ -8,7 +8,8 @@
     "manager",
     "3"
   ],
-  "repository": "https://github.com/InukaAsith/Daisy",
+  "stack":"heroku-18",
+  "repository": "hhttps://github.com/InukaAsith/Daisy",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable env variables",
@@ -101,7 +102,7 @@
   },
   "addons": [
     {
-      "plan": "heroku-18",
+      "plan": "heroku-postgresql",
       "options": {
         "version": "10"
       }
